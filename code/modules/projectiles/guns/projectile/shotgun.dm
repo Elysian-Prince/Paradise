@@ -86,7 +86,8 @@
 
 // RIOT SHOTGUN //
 
-/obj/item/gun/projectile/shotgun/riot //for spawn in the armory
+/// for spawn in the armory
+/obj/item/gun/projectile/shotgun/riot
 	name = "riot shotgun"
 	desc = "A sturdy shotgun with a longer magazine and a fixed tactical stock designed for non-lethal riot control."
 	icon_state = "riotshotgun"
@@ -320,7 +321,7 @@
 	item_state = "shotgun_combat"
 	origin_tech = "combat=6"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com
-	w_class = WEIGHT_CLASS_HUGE
+	w_class = WEIGHT_CLASS_BULKY
 	execution_speed = 5 SECONDS
 
 //Dual Feed Shotgun

@@ -50,7 +50,7 @@
 		/obj/item/storage/box/engineer = 1,
 		/obj/item/flashlight = 1,
 		/obj/item/card/emag = 1,
-		/obj/item/reagent_containers/food/snacks/syndidonkpocket = 1
+		/obj/item/food/snacks/syndidonkpocket = 1
 	)
 
 	var/id_icon = "syndie"
@@ -103,7 +103,7 @@
 		/obj/item/ammo_box/magazine/m10mm = 1,
 		/obj/item/crowbar/red = 1,
 		/obj/item/grenade/plastic/c4 = 1,
-		/obj/item/reagent_containers/food/snacks/syndidonkpocket = 1,
+		/obj/item/food/snacks/syndidonkpocket = 1,
 		/obj/item/flashlight = 1,
 		/obj/item/clothing/shoes/combat = 1
 	)
@@ -377,13 +377,13 @@
 	l_ear = /obj/item/radio/headset
 	glasses = /obj/item/clothing/glasses/thermal/monocle
 	id = /obj/item/card/id
-	l_pocket = /obj/item/reagent_containers/food/snacks/grown/banana
+	l_pocket = /obj/item/food/snacks/grown/banana
 	r_pocket = /obj/item/bikehorn
 	r_hand = /obj/item/fireaxe
 	backpack_contents = list(
 		/obj/item/storage/box/survival = 1,
 		/obj/item/flashlight = 1,
-		/obj/item/reagent_containers/food/drinks/bottle/bottleofbanana = 1,
+		/obj/item/reagent_containers/drinks/bottle/bottleofbanana = 1,
 		/obj/item/grenade/clown_grenade = 1,
 		/obj/item/melee/baton/cattleprod = 1,
 		/obj/item/stock_parts/cell/super = 1,
@@ -416,14 +416,14 @@
 	pda = /obj/item/pda/mime
 	backpack_contents = list(
 		/obj/item/storage/box/survival = 1,
-		/obj/item/reagent_containers/food/drinks/bottle/bottleofnothing = 1,
+		/obj/item/reagent_containers/drinks/bottle/bottleofnothing = 1,
 		/obj/item/toy/crayon/mime = 1,
 		/obj/item/gun/projectile/automatic/pistol = 1,
 		/obj/item/ammo_box/magazine/m10mm = 1,
 		/obj/item/suppressor = 1,
 		/obj/item/card/emag = 1,
 		/obj/item/radio/uplink = 1,
-		/obj/item/reagent_containers/food/snacks/syndidonkpocket = 1,
+		/obj/item/food/snacks/syndidonkpocket = 1,
 		/obj/item/flashlight = 1
 	)
 
@@ -950,9 +950,10 @@
 	back = /obj/item/mod/control/pre_equipped/traitor
 	shoes = /obj/item/clothing/shoes/magboots/syndie
 
-/datum/outfit/admin/modsuit/wizard // Technically not a MODsuit, we'll bundle it up in here for the future when it does become one
+/// Technically not a MODsuit, we'll bundle it up in here for the future when it does become one
+/datum/outfit/admin/modsuit/wizard
 	name = "Hardsuit - Wizard"
-	suit = /obj/item/clothing/suit/space/hardsuit/shielded/wizard
+	suit = /obj/item/clothing/suit/space/hardsuit/wizard
 	shoes = /obj/item/clothing/shoes/magboots/wizard
 
 /datum/outfit/admin/modsuit/medical
@@ -980,7 +981,8 @@
 	name = "Tournament Standard Green"
 	uniform = /obj/item/clothing/under/color/green
 
-/datum/outfit/admin/tournament/tournament_gangster //gangster are supposed to fight each other. --rastaf0
+/// gangster are supposed to fight each other. --rastaf0
+/datum/outfit/admin/tournament/tournament_gangster
 	name = "Tournament Gangster"
 
 	uniform = /obj/item/clothing/under/rank/security/detective
@@ -991,7 +993,8 @@
 	l_pocket = /obj/item/ammo_box/a357
 	r_hand = /obj/item/gun/projectile/automatic/proto
 
-/datum/outfit/admin/tournament/tournament_chef //Steven Seagal FTW
+/// Steven Seagal FTW
+/datum/outfit/admin/tournament/tournament_chef
 	name = "Tournament Chef"
 
 	uniform = /obj/item/clothing/under/rank/civilian/chef
@@ -1236,7 +1239,7 @@
 	l_hand = null
 	backpack_contents = list(
 		/obj/item/storage/box/engineer = 1,
-		/obj/item/clothing/suit/space/hardsuit/shielded/wizard/arch = 1,
+		/obj/item/clothing/suit/space/hardsuit/wizard/arch = 1,
 		/obj/item/clothing/shoes/magboots = 1,
 		/obj/item/kitchen/knife/ritual  = 1,
 		/obj/item/clothing/suit/wizrobe/red = 1,
@@ -1307,7 +1310,7 @@
 		/obj/item/stamp/clown = 1,
 		/obj/item/toy/crayon/rainbow = 1,
 		/obj/item/reagent_containers/spray/waterflower = 1,
-		/obj/item/reagent_containers/food/snacks/grown/banana = 1,
+		/obj/item/food/snacks/grown/banana = 1,
 	)
 
 	shoes = /obj/item/clothing/shoes/clown_shoes

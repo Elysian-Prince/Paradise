@@ -22,7 +22,7 @@
 
 /client/can_vv_get(var_name)
 	var/static/list/protected_vars = list(
-		"address", "chatOutput", "computer_id", "connection", "jbh", "pm_tracker", "related_accounts_cid", "related_accounts_ip", "watchlisted"
+		"address", "computer_id", "connection", "jbh", "pm_tracker", "related_accounts_cid", "related_accounts_ip", "watchlisted"
 	)
 	if(!check_rights(R_ADMIN, FALSE, usr) && (var_name in protected_vars))
 		return FALSE
@@ -91,7 +91,6 @@
 	. += "---"
 
 /client/proc/debug_variables(datum/D in world)
-	set category = "Debug"
 	set name = "\[Admin\] View Variables"
 
 	var/static/cookieoffset = rand(1, 9999) //to force cookies to reset after the round.
@@ -1097,7 +1096,7 @@
 		if(!verb || verb == "Cancel")
 			return
 		else
-			H.verbs += verb
+			add_verb(H, verb)
 			message_admins("[key_name_admin(usr)] has given [key_name_admin(H)] the verb [verb]")
 			log_admin("[key_name(usr)] has given [key_name(H)] the verb [verb]")
 
@@ -1116,7 +1115,7 @@
 		if(!verb)
 			return
 		else
-			H.verbs -= verb
+			remove_verb(H, verb)
 			message_admins("[key_name_admin(usr)] has removed verb [verb] from [key_name_admin(H)]")
 			log_admin("[key_name(usr)] has removed verb [verb] from [key_name(H)]")
 
